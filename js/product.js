@@ -34,6 +34,10 @@ $( document ).ready(function() {
         mode           : 'range',
         min            : products[id].Date,
     });
+
+    var userId = JSON.parse( localStorage.getItem('userOnline') || "[]");
+    if (userId === users[products[id].UserId].Number)
+        $('#rent').hide()
 });
 
 $('#rent').click(function () {

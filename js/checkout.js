@@ -49,12 +49,8 @@ $('#order').click(function () {
     var firstName = $('#firstName').val();
     var lastName = $('#lastName').val();
     var address = $('#address').val();
-    var town = $('#town').val();
-    var state = $('#state').val();
-    var postcode = $('#postcode').val();
-    var phone = $('#phone').val();
 
-    if (firstName == "" || lastName == "" || address == "" || town == "" || state == "" || postcode == "" || phone == "")
+    if (firstName == "" || lastName == "" || address == "")
     {
         alert("Not all required fields are filled!")
     }

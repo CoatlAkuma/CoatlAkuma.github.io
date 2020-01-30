@@ -355,7 +355,7 @@ width: 100%;}
 .product-img a img{
 transition: all 0.3s ease 0s;
 width: 100%;}
-.product-img a img.primary-image{height: 300px;}
+.product-img a img.primary-image{height: 250px;}
 .actions{position: absolute;
 text-align: center;
 top: 50%;
@@ -1301,7 +1301,7 @@ top: -2px;}
 }
 .usr-pic > img {
 	float: none;
-	border: 5px solid #fff;
+	border: 3px solid #465077;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	-ms-border-radius: 100px;

@@ -8,28 +8,28 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-	
+
     1. Theme Default CSS (body, link color, section etc)
-    2. header 
-		2.1 header-top-area 
-		2.2 header-mid-area 
+    2. header
+		2.1 header-top-area
+		2.2 header-mid-area
 		2.3 mainmenu-area
     3. slider-area
-    5. features-area 
+    5. features-area
 	6. new-product-area
 	7. banner--area
-	9. footer 
-	10. products page	
-	11. account page		
+	9. footer
+	10. products page
+	11. account page
 	12. checkout page
 	13. product page
 	14. about page
 	15. contact page
 	16. error-page
-  
+
 -----------------------------------------------------------------------------------*/
 
 /*----------------------------------------*/
@@ -77,10 +77,10 @@ body {
 .slicknav{display:none}
 .container{width:1200px}
 /* =========================
-2. header 
+2. header
 ============================*/
-/*----------------------------------- 
-2.1 header-top-area 
+/*-----------------------------------
+2.1 header-top-area
 -------------------------------------*/
 header.header-home {
   position: absolute;
@@ -137,8 +137,8 @@ margin-right: 20px;
 color: #d5d5d5;
 }
 .top-menu ul li a:hover{color: #465077;}
-/*----------------------------------- 
-2.2 header-mid-area 
+/*-----------------------------------
+2.2 header-mid-area
 -------------------------------------*/
 .header-mid-area {
   padding: 30px 0 10px;
@@ -211,7 +211,7 @@ width: 100%;}
 p.total span{float: right;
 font-size: 18px;
 font-weight: 700;}
-/*----------------------------------- 
+/*-----------------------------------
 2.3 mainmenu-area
 -------------------------------------*/
 .mainmenu-area {
@@ -304,11 +304,11 @@ width: 100%;}
 .mainmenu ul li .mega-menu .mega-right span {
   width: 100%;
 }
-/*----------------------------------- 
+/*-----------------------------------
 3. slider-area
 -------------------------------------*/
 .slider-wrap{margin-bottom:35px}
-/*----------------------------------- 
+/*-----------------------------------
 5. features-area
 -------------------------------------*/
 .features-area {}
@@ -497,14 +497,14 @@ ul.product-nav li:last-child::before {
   margin-top: 0;
   text-align: center;
 }
-/*----------------------------------- 
+/*-----------------------------------
 6. new-product-area
 -------------------------------------*/
 .new-product-area {}
 .new-product-area .section-heading {
   margin: 0 0 35px;
 }
-/*----------------------------------- 
+/*-----------------------------------
 7. banner--area
 -------------------------------------*/
 .banner--area{}
@@ -637,9 +637,9 @@ ul.footer-contact li i {
 }
 #scrollUp:hover{background:#465077;border:1px solid #465077;color:#fff}
 
-/*=========================== 
+/*===========================
 10. products page
-============================= */ 
+============================= */
 .products-header-area {
   margin: 50px 0 70px;
   text-align: center;
@@ -977,10 +977,10 @@ display: block;
 left: -15%;
 position: absolute;
 width: 130%;}
-/*=========================== 
+/*===========================
 11. account page
-============================= */ 
-.entry-header-area{padding: - 0;}
+============================= */
+.entry-header-area{padding: 20px;}
 .entry-header{}
 h1.entry-title{font-size: 20px;
 margin: 0;
@@ -1145,7 +1145,7 @@ margin: 0 20px 0 0;}
 margin-top: 0;
 position: relative;
 top: 2px;}
-/*=========================== 
+/*===========================
 13. checkout page
 ============================= */
 .form-row > label {
@@ -1292,7 +1292,24 @@ top: -2px;}
   width: 100%;
 }
 .order-button-payment input:hover{background:#E61719}
-/*=========================== 
+
+.usr-pic {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: -48px;
+}
+.usr-pic > img {
+	float: none;
+	border: 5px solid #fff;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	border-radius: 100px;
+	width: 100%;
+}
+/*===========================
 14. product page
 ============================= */
 .product-simple-area{margin: 20px 20px 20px;}
@@ -1419,7 +1436,7 @@ margin: 0;border-right:1px solid #e8e8e9}
 .product-tab-desc table tr.pro-back{background:#F9F9F9}
 
 .product-tab .desc{}
-.product-tab 
+.product-tab
 .review-form-wrapper{}
 .review-form-wrapper h3 {
   font-size: 20px;
@@ -1481,7 +1498,7 @@ width: 100%;}
   font-size: 13px;
   margin-left:3px;
 }
-/*=========================== 
+/*===========================
 15. about page
 ============================= */
 .about-header-area {
@@ -1558,7 +1575,7 @@ margin: 0 0 20px;}
 margin: 10px 0;
 text-transform: uppercase;}
 .about-review-info p{}
-/*=========================== 
+/*===========================
 16. contact page
 ============================= */
 .contact-area {
@@ -1621,7 +1638,7 @@ width: 100%;}
   margin-top: 16px;
 }
 .contact-form input[type=submit]:hover{background:#465077}
-/*=========================== 
+/*===========================
 17. error-page
 ============================= */
 .error-page{background: rgba(0, 0, 0, 0) url("img/404/404.jpg") repeat scroll center center / cover ;}

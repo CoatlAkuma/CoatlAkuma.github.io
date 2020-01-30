@@ -1,9 +1,46 @@
+function UserInfo(num,name,mail,password,img){
+    this.Number=num;
+    this.Name=name;
+    this.Mail=mail;
+    this.Password=password;
+    this.Img=img;
+}
+
+var img
+var user
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            img = e.target.result
+            $('#img').attr('src', e.target.result);
+
+            var users = JSON.parse( localStorage.getItem('userInfo') || "[]");
+            users[user.Number].Img = img
+
+            localStorage.setItem("userInfo",JSON.stringify(users) );
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#ImgUpload").change(function(){
+    readURL(this);
+});
+
 $( document ).ready(function() {
     var users = JSON.parse( localStorage.getItem('userInfo') || "[]");
     var userId = JSON.parse( localStorage.getItem('userOnline') || "[]");
 
-    $('#name').append(users[userId].Name)
-    $('#mail').append(users[userId].Mail)
+    user = users[userId]
+
+    $('#name').append(user.Name)
+    $('#mail').append(user.Mail)
+    if (user.Img != "")
+        $('#img').attr('src', user.Img);
 
     var products = JSON.parse( localStorage.getItem('products') || "[]");
 

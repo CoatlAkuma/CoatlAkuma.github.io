@@ -5,6 +5,13 @@ function UserInfo(num,name,mail,password){
     this.Password=password;
 }
 
+var lastPage
+
+$( document ).ready(function() {
+    lastPage = JSON.parse( localStorage.getItem('lastPage') || "[]");
+    localStorage.setItem("lastPage",JSON.stringify(null) );
+});
+
 $('#registrate').click(function () {
     var data = JSON.parse( localStorage.getItem('userInfo') || "[]");
     var length = data.length;
@@ -23,11 +30,11 @@ $('#registrate').click(function () {
         data.push(new UserInfo(num,name,mail,password))
         localStorage.setItem("userInfo",JSON.stringify(data) );
         localStorage.setItem("userOnline",JSON.stringify(num) );
-        window.location.href = "index.html";
 
-        $('#username').val('');
-        $('#regMail').val('');
-        $('#regPassword').val('');
+        if (lastPage === null)
+            window.location.href = "index.html";
+        else
+            window.location.href = lastPage;
     }
 })
 
@@ -40,7 +47,11 @@ $('#login').click(function () {
     if (isUserExist != null)
     {
         localStorage.setItem("userOnline",JSON.stringify(isUserExist.Number));
+
+        if (lastPage === null)
         window.location.href = "index.html";
+        else
+            window.location.href = lastPage;
     }
     else
     {

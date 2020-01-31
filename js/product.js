@@ -32,7 +32,7 @@ $( document ).ready(function() {
         position       : 'right',
         hide_on_select : true,
         mode           : 'range',
-        min            : products[id].Date,
+        min            : new Date(),
     });
 
     var userId = JSON.parse( localStorage.getItem('userOnline') || "[]");
@@ -56,6 +56,8 @@ $('#rent').click(function () {
     }
     else
     {
+        localStorage.setItem("lastPage",JSON.stringify("checkout.html?id=" + id + "&date=" + date + "&count=" + count) );
+
         window.location.href = "register.html?#";
     }
 })

@@ -33,12 +33,15 @@ $( document ).ready(function() {
 
     if (isUserOnline === 0)
     {
+
     }
     else if (isUserOnline != '' )
     {
+
     }
     else
     {
+        localStorage.setItem("lastPage",JSON.stringify("add_product.html") );
         window.location.href = "register.html?#";
     }
 });
